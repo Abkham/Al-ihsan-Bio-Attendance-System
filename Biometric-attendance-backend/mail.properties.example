@@ -1,0 +1,21 @@
+# Copy this file to  mail.properties  (same folder as pom.xml), fill it in, restart the backend.
+# mail.properties is ignored by git - never commit real passwords.
+#
+# --- Gmail (recommended) ---
+# 1. Turn on 2-Step Verification on the Gmail account.
+# 2. Google Account > Security > App passwords > create one (16 letters).
+# 3. Use that app password below, NOT the normal Gmail password.
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=yourschool@gmail.com
+spring.mail.password=xxxx xxxx xxxx xxxx
+# Optional (defaults to the username):
+# app.mail.from=yourschool@gmail.com
+#
+# Public address of the frontend used inside the e-mailed link (use your ngrok/real address):
+# app.frontend-url=https://your-frontend-address
+#
+# --- Port 465 (SSL) instead of 587 ---
+# spring.mail.port=465
+# spring.mail.properties.mail.smtp.ssl.enable=true
+# spring.mail.properties.mail.smtp.starttls.enable=false

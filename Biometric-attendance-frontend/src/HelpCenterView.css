@@ -1,0 +1,284 @@
+Help center view.css
+
+/* ==============================
+   HELP CENTER MAIN CONTAINER
+============================== */
+
+.hc-container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 20px 0;
+  box-sizing: border-box;
+  color: #1f2a24;
+}
+
+.hc-container h2 {
+  margin: 0 0 6px;
+  color: #123b2a;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.hc-intro {
+  color: #55605a;
+  margin: 0 0 18px;
+  line-height: 1.6;
+}
+
+
+/* ==============================
+   SEARCH BOX
+============================== */
+
+.hc-search {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.hc-search input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border: 1px solid #cdd8d2;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #fff;
+  outline: none;
+}
+
+.hc-search input:focus {
+  border-color: #26734d;
+  box-shadow: 0 0 0 3px rgba(38, 115, 77, 0.12);
+}
+
+
+/* ==============================
+   HELP TOPICS LAYOUT
+============================== */
+
+.hc-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 22px;
+  margin-top: 10px;
+  align-items: stretch;
+}
+
+.hc-topics {
+  width: 100%;
+  min-width: 0;
+}
+
+
+/* ==============================
+   HELP TOPIC CARDS
+============================== */
+
+.hc-card {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #e1e8e3;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.hc-card.open {
+  box-shadow: 0 4px 14px rgba(18, 59, 42, 0.08);
+}
+
+.hc-card-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: #123b2a;
+}
+
+.hc-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.hc-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.hc-chevron {
+  font-size: 22px;
+  color: #26734d;
+  flex-shrink: 0;
+}
+
+.hc-card-body {
+  padding: 0 20px 18px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.hc-card-body ol {
+  padding-left: 24px;
+  margin: 4px 0 12px;
+}
+
+.hc-card-body li {
+  margin-bottom: 8px;
+}
+
+
+/* ==============================
+   NOTES
+============================== */
+
+.hc-notes {
+  background: #f4f8f6;
+  border-radius: 8px;
+  padding: 12px 14px 12px 32px;
+  margin: 12px 0 0;
+  font-size: 14px;
+}
+
+
+/* ==============================
+   HELP TABLE
+============================== */
+
+.hc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.hc-table th,
+.hc-table td {
+  text-align: left;
+  padding: 11px 12px;
+  border-bottom: 1px solid #edf1ee;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.hc-table th {
+  background: #f4f8f6;
+  color: #123b2a;
+}
+
+
+/* ==============================
+   EMPLOYEE SUPPORT SECTION
+============================== */
+
+.hc-support-section {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.hc-support {
+  width: 100%;
+  box-sizing: border-box;
+  background: #123b2a;
+  color: #fff;
+  border-radius: 12px;
+  padding: 22px;
+  position: static;
+}
+
+.hc-support h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+.hc-support p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.hc-support ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+}
+
+.hc-support li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.hc-support a {
+  color: #bff0d4;
+  font-weight: bold;
+}
+
+.hc-empty {
+  color: #666;
+  padding: 16px;
+}
+
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 820px) {
+  .hc-container {
+    padding: 12px 0;
+  }
+
+  .hc-container h2 {
+    font-size: 23px;
+  }
+
+  .hc-card-head {
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .hc-card-body {
+    padding: 0 14px 16px;
+  }
+
+  .hc-table {
+    font-size: 13px;
+  }
+
+  .hc-table th,
+  .hc-table td {
+    padding: 8px;
+  }
+
+  .hc-support {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hc-container h2 {
+    font-size: 21px;
+  }
+
+  .hc-intro {
+    font-size: 14px;
+  }
+
+  .hc-card-head {
+    gap: 8px;
+  }
+
+  .hc-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
